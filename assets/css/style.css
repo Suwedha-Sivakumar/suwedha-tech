@@ -249,11 +249,13 @@ section {
 }
 
 .preloader-logo {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
   font-weight: 800;
   letter-spacing: -0.05em;
   margin-bottom: 25px;
   position: relative;
+  text-align: center;
+  white-space: nowrap;
 }
 .preloader-logo span {
   color: var(--highlight);
@@ -1472,14 +1474,20 @@ section {
   margin: 0 0 5px 0;
   font-size: 1rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #ffffff !important;
 }
 
 .contact-info-text p,
 .contact-info-text a {
   margin: 0;
   font-size: 0.95rem;
-  color: var(--text-secondary);
+  color: #ffffff !important;
+}
+
+[data-theme="light"] .contact-info-text h5,
+[data-theme="light"] .contact-info-text p,
+[data-theme="light"] .contact-info-text a {
+  color: #000000 !important;
 }
 
 .contact-map-wrapper {
@@ -1724,4 +1732,65 @@ section {
   color: #fff;
   box-shadow: 0 5px 15px rgba(var(--highlight-rgb), 0.3);
   transform: translateY(-3px);
+}
+
+/* 16. ADDITIONAL MOBILE RESPONSIVENESS FIXES */
+@media (max-width: 991px) {
+  .hero-name {
+    font-size: clamp(2.2rem, 8vw, 3.5rem) !important;
+  }
+  .hero-typing {
+    font-size: clamp(1.3rem, 5vw, 1.8rem) !important;
+    min-height: auto !important;
+    margin-bottom: 20px !important;
+  }
+  .hero-desc {
+    font-size: 1rem !important;
+    margin-bottom: 30px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-avatar-frame {
+    width: 260px !important;
+    height: 260px !important;
+  }
+  .floating-tech-card {
+    padding: 8px 12px !important;
+  }
+  .floating-tech-card.card-1 {
+    left: -10px !important;
+    top: 10% !important;
+  }
+  .floating-tech-card.card-2 {
+    right: -10px !important;
+    bottom: 5% !important;
+  }
+  .floating-tech-card h5 {
+    font-size: 0.8rem !important;
+  }
+  .floating-tech-card span {
+    font-size: 0.7rem !important;
+  }
+  .floating-tech-card i {
+    font-size: 1.1rem !important;
+  }
+}
+
+.about-detail-value {
+  color: #ffffff !important;
+  transition: var(--transition);
+}
+
+.about-detail-value:hover {
+  color: var(--highlight) !important;
+  text-decoration: underline !important;
+}
+
+[data-theme="light"] .about-detail-value {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .about-detail-value:hover {
+  color: var(--accent) !important;
 }
