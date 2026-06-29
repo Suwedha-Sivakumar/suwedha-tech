@@ -45,52 +45,91 @@
 
   <!-- NAVIGATION HEADER -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-custom" id="main-navbar">
       <div class="container">
+        <!-- Logo / Brand -->
         <a class="navbar-brand navbar-brand-custom" href="#home" id="nav-brand">
           S<span>S</span>
         </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="text-white"><i class="fas fa-bars-staggered fa-lg"></i></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav align-items-center gap-2">
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#certifications">Certifications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#services">Services</a>
-            </li>
 
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#contact">Contact</a>
-            </li>
-            <!-- Dark / Light Theme Toggle -->
-            <li class="nav-item">
-              <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch visual theme">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-              </button>
-            </li>
+        <!-- Right-side controls: Theme toggle + Hamburger (mobile) -->
+        <div class="nav-right-controls">
+          <!-- Dark / Light Theme Toggle (always visible) -->
+          <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch visual theme">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button>
+
+          <!-- Custom Hamburger Toggle (mobile only) -->
+          <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span class="hamburger-bar bar-1"></span>
+            <span class="hamburger-bar bar-2"></span>
+            <span class="hamburger-bar bar-3"></span>
+          </button>
+        </div>
+
+        <!-- Desktop Nav Links (hidden on mobile, replaced by overlay) -->
+        <div class="desktop-nav" id="desktop-nav">
+          <ul class="desktop-nav-list">
+            <li><a class="nav-link-custom active" href="#home">Home</a></li>
+            <li><a class="nav-link-custom" href="#about">About</a></li>
+            <li><a class="nav-link-custom" href="#skills">Skills</a></li>
+            <li><a class="nav-link-custom" href="#experience">Experience</a></li>
+            <li><a class="nav-link-custom" href="#projects">Projects</a></li>
+            <li><a class="nav-link-custom" href="#certifications">Certifications</a></li>
+            <li><a class="nav-link-custom" href="#services">Services</a></li>
+            <li><a class="nav-link-custom" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <div class="mobile-nav-panel" id="mobile-nav-panel">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item" style="--item-index: 0;">
+          <a class="mobile-nav-link active" href="#home">
+            <i class="fas fa-home"></i><span>Home</span>
+          </a>
+        </li>
+        <li class="mobile-nav-item" style="--item-index: 1;">
+          <a class="mobile-nav-link" href="#about">
+            <i class="fas fa-user"></i><span>About</span>
+          </a>
+        </li>
+        <li class="mobile-nav-item" style="--item-index: 2;">
+          <a class="mobile-nav-link" href="#skills">
+            <i class="fas fa-laptop-code"></i><span>Skills</span>
+          </a>
+        </li>
+        <li class="mobile-nav-item" style="--item-index: 3;">
+          <a class="mobile-nav-link" href="#experience">
+            <i class="fas fa-briefcase"></i><span>Experience</span>
+          </a>
+        </li>
+        <li class="mobile-nav-item" style="--item-index: 4;">
+          <a class="mobile-nav-link" href="#projects">
+            <i class="fas fa-diagram-project"></i><span>Projects</span>
+          </a>
+        </li>
+        <li class="mobile-nav-item" style="--item-index: 5;">
+          <a class="mobile-nav-link" href="#certifications">
+            <i class="fas fa-award"></i><span>Certifications</span>
+          </a>
+        </li>
+        <li class="mobile-nav-item" style="--item-index: 6;">
+          <a class="mobile-nav-link" href="#services">
+            <i class="fas fa-concierge-bell"></i><span>Services</span>
+          </a>
+        </li>
+        <li class="mobile-nav-item" style="--item-index: 7;">
+          <a class="mobile-nav-link" href="#contact">
+            <i class="fas fa-envelope"></i><span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <!-- HOME (HERO) SECTION -->

@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. INTERSECTION OBSERVER FOR ACTIVE MENU LINKS
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link-custom');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
   const observerOptions = {
     root: null,
@@ -119,7 +120,15 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute('id');
+        // Sync desktop nav links
         navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
+          }
+        });
+        // Sync mobile nav links
+        mobileNavLinks.forEach(link => {
           link.classList.remove('active');
           if (link.getAttribute('href') === `#${id}`) {
             link.classList.add('active');
@@ -131,6 +140,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(section => {
     sectionObserver.observe(section);
+  });
+
+  // 5b. MOBILE MENU TOGGLE LOGIC
+  const mobileToggle = document.getElementById('mobile-menu-toggle');
+  const mobilePanel = document.getElementById('mobile-nav-panel');
+  const mobileOverlay = document.getElementById('mobile-nav-overlay');
+
+  // Helper: open / close mobile menu
+  function openMobileMenu() {
+    mobileToggle.classList.add('active');
+    mobileToggle.setAttribute('aria-expanded', 'true');
+    mobilePanel.classList.add('active');
+    mobileOverlay.classList.add('active');
+    document.body.classList.add('mobile-menu-open');
+  }
+
+  function closeMobileMenu() {
+    mobileToggle.classList.remove('active');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    mobilePanel.classList.remove('active');
+    mobileOverlay.classList.remove('active');
+    document.body.classList.remove('mobile-menu-open');
+  }
+
+  // Toggle on hamburger click
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = mobilePanel.classList.contains('active');
+      isOpen ? closeMobileMenu() : openMobileMenu();
+    });
+  }
+
+  // Close when clicking a mobile nav link
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  });
+
+  // Close when clicking the backdrop overlay
+  if (mobileOverlay) {
+    mobileOverlay.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  }
+
+  // Close on ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobilePanel && mobilePanel.classList.contains('active')) {
+      closeMobileMenu();
+    }
+  });
+
+  // Auto-close mobile menu on window resize above breakpoint
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 992 && mobilePanel && mobilePanel.classList.contains('active')) {
+      closeMobileMenu();
+    }
   });
 
   // 6. TYPED.JS TEXT HERO LOOP
