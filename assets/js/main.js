@@ -55,21 +55,25 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 3. DARK / LIGHT MODE STATE PERSISTENCE
-  const themeToggleBtn = document.getElementById('theme-toggle');
+  const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
   const currentTheme = localStorage.getItem('theme') || 'dark';
 
   // Apply default or stored theme on startup
   document.documentElement.setAttribute('data-theme', currentTheme);
 
-  themeToggleBtn.addEventListener('click', () => {
-    let theme = document.documentElement.getAttribute('data-theme');
-    let targetTheme = (theme === 'dark') ? 'light' : 'dark';
-    
-    document.documentElement.setAttribute('data-theme', targetTheme);
-    localStorage.setItem('theme', targetTheme);
-    
-    // Dynamically update particles color scheme when changing theme
-    updateParticlesTheme(targetTheme);
+  themeToggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      let theme = document.documentElement.getAttribute('data-theme');
+      let targetTheme = (theme === 'dark') ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', targetTheme);
+      localStorage.setItem('theme', targetTheme);
+      
+      // Dynamically update particles color scheme when changing theme
+      if (typeof updateParticlesTheme === 'function') {
+        updateParticlesTheme(targetTheme);
+      }
+    });
   });
 
   // 4. STICKY HEADER & SCROLL PROGRESS INDICATOR

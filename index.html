@@ -52,15 +52,14 @@
           S<span>S</span>
         </a>
 
-        <!-- Right-side controls: Theme toggle + Hamburger (mobile) -->
-        <div class="nav-right-controls">
-          <!-- Dark / Light Theme Toggle (always visible) -->
-          <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch visual theme">
+        <!-- Custom Hamburger Toggle (mobile only) -->
+        <div class="d-flex align-items-center gap-2 d-lg-none">
+          <!-- Dark / Light Theme Toggle for Mobile -->
+          <button class="theme-toggle-btn" id="theme-toggle-mobile" aria-label="Switch visual theme">
             <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
           </button>
-
-          <!-- Custom Hamburger Toggle (mobile only) -->
+          
           <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
             <span class="hamburger-bar bar-1"></span>
             <span class="hamburger-bar bar-2"></span>
@@ -68,17 +67,24 @@
           </button>
         </div>
 
-        <!-- Desktop Nav Links (hidden on mobile, replaced by overlay) -->
-        <div class="desktop-nav" id="desktop-nav">
-          <ul class="desktop-nav-list">
-            <li><a class="nav-link-custom active" href="#home">Home</a></li>
-            <li><a class="nav-link-custom" href="#about">About</a></li>
-            <li><a class="nav-link-custom" href="#skills">Skills</a></li>
-            <li><a class="nav-link-custom" href="#experience">Experience</a></li>
-            <li><a class="nav-link-custom" href="#projects">Projects</a></li>
-            <li><a class="nav-link-custom" href="#certifications">Certifications</a></li>
-            <li><a class="nav-link-custom" href="#services">Services</a></li>
-            <li><a class="nav-link-custom" href="#contact">Contact</a></li>
+        <!-- Desktop Nav Links (Bootstrap Original) -->
+        <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
+          <ul class="navbar-nav align-items-center gap-2">
+            <li class="nav-item"><a class="nav-link nav-link-custom active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#certifications">Certifications</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact">Contact</a></li>
+            <!-- Dark / Light Theme Toggle (Desktop) -->
+            <li class="nav-item">
+              <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch visual theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -715,14 +721,6 @@
         <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
           <div class="glass-panel service-card">
             <div class="service-icon-box">
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 5 -->
-        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
-          <div class="glass-panel service-card">
-            <div class="service-icon-box">
               <i class="fas fa-bullhorn"></i>
             </div>
             <h4 class="service-title">Digital Marketing</h4>
@@ -732,8 +730,8 @@
           </div>
         </div>
 
-        <!-- Service 6 -->
-        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
           <div class="glass-panel service-card">
             <div class="service-icon-box">
               <i class="fas fa-bug-slash"></i>

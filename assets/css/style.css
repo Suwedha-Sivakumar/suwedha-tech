@@ -150,12 +150,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Section Common Spacing */
 section {
-  padding: 100px 0;
+  padding: 85px 0;
   position: relative;
 }
 
 .section-title-wrapper {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -186,6 +186,50 @@ section {
   background: linear-gradient(135deg, var(--accent), var(--highlight));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Responsive Section Spacing & Typography */
+@media (max-width: 991px) {
+  section {
+    padding: 70px 0;
+  }
+  .section-title-wrapper {
+    margin-bottom: 45px;
+  }
+  .section-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+  .section-title-wrapper {
+    margin-bottom: 35px;
+  }
+  .section-title {
+    font-size: 2.1rem;
+  }
+  .section-tag {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding: 50px 0;
+  }
+  .section-title-wrapper {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .section-tag {
+    font-size: 0.75rem;
+  }
 }
 
 /* 3. CUSTOM CURSOR & PAGE LOADING ANIMATION */
@@ -395,27 +439,6 @@ section {
 .navbar-brand-custom:hover {
   transform: translateY(-2px);
   filter: drop-shadow(0 0 12px rgba(var(--highlight-rgb), 0.5));
-}
-
-/* ----- Right-side Controls Group ----- */
-.nav-right-controls {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-/* ----- Desktop Navigation List ----- */
-.desktop-nav {
-  display: flex;
-  align-items: center;
-}
-.desktop-nav-list {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .nav-link-custom {
