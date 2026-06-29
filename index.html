@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suwedha Sivakumar | Associate Full Stack Developer</title>
+  <meta name="description" content="Explore the professional portfolio of Suwedha Sivakumar, a full‑stack developer, cyber security specialist, AI enthusiast, and digital marketer featuring premium UI/UX designs.">
+  <meta name="keywords" content="Portfolio, Software Developer, Cyber Security, AI, Web Design, Ethical Hacker, Digital Marketer">
+  <meta name="author" content="Suwedha Sivakumar">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- CDN STYLESHEETS -->
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS Scroll Animation Library CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- CUSTOM STYLESHEET -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- PAGE PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-logo">SUWEDHA<span>.SIVAKUMAR</span></div>
+    <div class="preloader-spinner"></div>
+    <div class="preloader-percentage">0%</div>
+  </div>
+
+  <!-- CUSTOM MOUSE CURSOR -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-follower"></div>
+
+  <!-- SCROLL PROGRESS INDICATOR -->
+  <div id="scroll-progress"></div>
+
+  <!-- FLOATING GRADIENT GLOWS -->
+  <div class="glow-spot glow-primary"></div>
+  <div class="glow-spot glow-secondary"></div>
+  <div class="glow-spot glow-highlight"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a class="navbar-brand navbar-brand-custom" href="#home" id="nav-brand">
+          S<span>S</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-white"><i class="fas fa-bars-staggered fa-lg"></i></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center gap-2">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#services">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#contact">Contact</a>
+            </li>
+            <!-- Dark / Light Theme Toggle -->
+            <li class="nav-item">
+              <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch visual theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HOME (HERO) SECTION -->
+  <section id="home">
+    <div id="particles-js"></div>
+    <!-- Floating decorative particles -->
+    <div class="ambient-shape shape-1"></div>
+    <div class="ambient-shape shape-2"></div>
+    
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100 py-5">
+        <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+          <span class="hero-greet">Initialize System</span>
+          <h1 class="hero-name">Suwedha Sivakumar</h1>
+          <div class="hero-typing">
+            I am a <span id="typed-element"></span>
+          </div>
+          <p class="hero-desc">
+            Bridging the gap between full-stack web development, cybersecurity, and strategic digital marketing. With a background in marketing management and administration, I build secure, high-performance web systems and aim to develop intelligent, AI-powered applications that drive business growth.
+          </p>
+          <div class="hero-buttons justify-content-center justify-content-lg-start">
+            <a href="#contact" class="btn-primary-custom">
+              <i class="fas fa-paper-plane"></i> Hire Me
+            </a>
+            <a href="#projects" class="btn-secondary-custom">
+              <i class="fas fa-code-branch"></i> View Projects
+            </a>
+            <a href="assets/docs/resume.pdf" download class="btn-secondary-custom">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+          <div class="hero-socials justify-content-center justify-content-lg-start">
+            <a href="https://github.com/Suwedha-Sivakumar" target="_blank" class="social-icon-btn" aria-label="GitHub Profile">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/suwedha-sivakumar" target="_blank" class="social-icon-btn" aria-label="LinkedIn Profile">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0 hero-avatar-wrapper">
+          <div class="hero-avatar-frame">
+              <img src="assets/images/profile.jpg" alt="Suwedha Sivakumar Developer Portrait" class="hero-avatar-img">
+          </div>
+          <!-- Floating interactive metric tags -->
+          <div class="floating-tech-card card-1">
+            <i class="fas fa-shield-halved"></i>
+            <div>
+              <span>Security Status</span>
+              <h5>99.8% Secured</h5>
+            </div>
+          </div>
+          <div class="floating-tech-card card-2">
+            <i class="fas fa-laptop-code"></i>
+            <div>
+              <span>Active Projects</span>
+              <h5>will Complete</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mouse Scroll Down Indicator -->
+    <a href="#about" class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="mouse-scroll"></div>
+    </a>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="container">
+      <div class="section-title-wrapper" data-aos="fade-up">
+        <span class="section-tag">Overview</span>
+        <h2 class="section-title">About <span>Me</span></h2>
+      </div>
+
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="about-image-wrapper">
+                <img src="assets/images/profile.jpg" alt="Suwedha Sivakumar standing portrait" class="about-img">
+          </div>
+        </div>
+        
+        <div class="col-lg-7" data-aos="fade-left">
+          <h3 class="mb-3">Designing Systems, Hardening Protocols</h3>
+          <p class="text-secondary mb-4">
+            Hello! I'm Suwedha Sivakumar, an IT professional and versatile multitasker based in Colombo, Sri Lanka. Combining my studies in software engineering and cybersecurity with practical experience as an Assistant Marketing Manager, I excel in web development, administrative operations, event organizing, and social media promotion. My career objective is to design secure, highly interactive digital solutions while continuously expanding my capabilities in AI technologies and modern system administration.
+          </p>
+
+          <!-- Personal Information Grid -->
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="glass-panel about-info-card d-flex align-items-center gap-3">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span class="text-muted d-block" style="font-size: 0.8rem;">Email</span>
+                  <a href="mailto:suwedha.it@gmail.com" class="text-primary font-weight-500">suwedha.it@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="glass-panel about-info-card d-flex align-items-center gap-3">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span class="text-muted d-block" style="font-size: 0.8rem;">Phone</span>
+                  <a href="tel:+94760070032" class="text-primary font-weight-500">+94 76 007 0032</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="glass-panel about-info-card d-flex align-items-center gap-3">
+                <i class="fas fa-location-dot"></i>
+                <div>
+                  <span class="text-muted d-block" style="font-size: 0.8rem;">Location</span>
+                  <span class="text-primary font-weight-500">Colombo, Sri Lanka</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="glass-panel about-info-card d-flex align-items-center gap-3">
+                <i class="fas fa-globe"></i>
+                <div>
+                  <span class="text-muted d-block" style="font-size: 0.8rem;">Website</span>
+                  <a href="https://secdev.io" target="_blank" class="text-primary font-weight-500">secdev.io</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-5 text-center text-sm-start">
+            <a href="assets/docs/resume.pdf" download class="btn-primary-custom me-3 mb-3 mb-sm-0">
+              <i class="fas fa-download"></i> Download CV / Resume
+            </a>
+            <a href="#contact" class="btn-secondary-custom">
+              <i class="fas fa-headset"></i> Secure Inquiry
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Counters Grid -->
+      <div class="row g-4 mt-5 text-center" data-aos="fade-up">
+        <div class="col-6 col-md-3">
+          <div class="glass-panel stat-box">
+            <div class="stat-number" data-target="1" data-suffix="+">0+</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="glass-panel stat-box">
+            <div class="stat-number" data-target="0" data-suffix="+">0+</div>
+            <div class="stat-label">Completed Projects</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="glass-panel stat-box">
+            <div class="stat-number" data-target="0" data-suffix="+">0+</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="glass-panel stat-box">
+            <div class="stat-number" data-target="0" data-suffix="+">0+</div>
+            <div class="stat-label">Certifications Held</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-title-wrapper" data-aos="fade-up">
+        <span class="section-tag">Competencies</span>
+        <h2 class="section-title">My Tech <span>Arsenal</span></h2>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <ul class="nav nav-pills project-filters justify-content-center" id="skills-tabs" role="tablist" data-aos="fade-up">
+        <li class="nav-item" role="presentation">
+          <button class="filter-btn active me-2" id="programming-tab" data-bs-toggle="pill" data-bs-target="#programming" type="button" role="tab" aria-selected="true">Programming</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="filter-btn me-2" id="webdev-tab" data-bs-toggle="pill" data-bs-target="#webdev" type="button" role="tab" aria-selected="false">Web Dev</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="filter-btn me-2" id="security-tab" data-bs-toggle="pill" data-bs-target="#security" type="button" role="tab" aria-selected="false">Cyber Security</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="filter-btn" id="marketing-tab" data-bs-toggle="pill" data-bs-target="#marketing" type="button" role="tab" aria-selected="false">Marketing &amp; Admin</button>
+        </li>
+      </ul>
+
+      <!-- SVG Gradients definitions for circular indicators -->
+      <svg width="0" height="0" style="position: absolute;">
+        <defs>
+          <linearGradient id="skill-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="var(--accent)" />
+            <stop offset="100%" stop-color="var(--highlight)" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <!-- Tabs Content -->
+      <div class="tab-content skills-tab-content" id="skills-tabs-content">
+        
+        <!-- Programming Skills -->
+        <div class="tab-pane fade show active" id="programming" role="tabpanel" aria-labelledby="programming-tab">
+          <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-right">
+              <h4 class="skill-category-title"><i class="fas fa-terminal"></i> Core Programming</h4>
+              <!-- Skill Bar 1 -->
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">HTML5 / CSS3</span>
+                  <span class="skill-bar-percent">95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 95%;"></div>
+                </div>
+              </div>
+              <!-- Skill Bar 2 -->
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">JavaScript (ES6+)</span>
+                  <span class="skill-bar-percent">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+              <!-- Skill Bar 3 -->
+              <div class="skill-bar-info">
+                <span class="skill-bar-title">Python</span>
+                <span class="skill-bar-percent">88%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+            
+            <div class="col-md-6" data-aos="fade-left">
+              <h4 class="skill-category-title"><i class="fas fa-database"></i> Backend & Database</h4>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">PHP</span>
+                  <span class="skill-bar-percent">82%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 82%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Java</span>
+                  <span class="skill-bar-percent">78%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 78%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">SQL (MySQL / PostgreSQL)</span>
+                  <span class="skill-bar-percent">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Dev Skills -->
+        <div class="tab-pane fade" id="webdev" role="tabpanel" aria-labelledby="webdev-tab">
+          <div class="row g-4 justify-content-center">
+            <!-- Circular chart 1 -->
+            <div class="col-6 col-md-3">
+              <div class="glass-panel circle-skill-card">
+                <div class="circle-chart-wrapper">
+                  <svg class="circle-chart-svg" viewBox="0 0 100 100">
+                    <circle class="circle-chart-bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="circle-chart-fill" cx="50" cy="50" r="45" data-percent="92"></circle>
+                  </svg>
+                  <div class="circle-chart-text">92%</div>
+                </div>
+                <h5 class="circle-skill-title">Bootstrap</h5>
+              </div>
+            </div>
+            <!-- Circular chart 2 -->
+            <div class="col-6 col-md-3">
+              <div class="glass-panel circle-skill-card">
+                <div class="circle-chart-wrapper">
+                  <svg class="circle-chart-svg" viewBox="0 0 100 100">
+                    <circle class="circle-chart-bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="circle-chart-fill" cx="50" cy="50" r="45" data-percent="88"></circle>
+                  </svg>
+                  <div class="circle-chart-text">88%</div>
+                </div>
+                <h5 class="circle-skill-title">WordPress</h5>
+              </div>
+            </div>
+            <!-- Circular chart 3 -->
+            <div class="col-6 col-md-3">
+              <div class="glass-panel circle-skill-card">
+                <div class="circle-chart-wrapper">
+                  <svg class="circle-chart-svg" viewBox="0 0 100 100">
+                    <circle class="circle-chart-bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="circle-chart-fill" cx="50" cy="50" r="45" data-percent="75"></circle>
+                  </svg>
+                  <div class="circle-chart-text">75%</div>
+                </div>
+                <h5 class="circle-skill-title">Flutter</h5>
+              </div>
+            </div>
+            <!-- Circular chart 4 -->
+            <div class="col-6 col-md-3">
+              <div class="glass-panel circle-skill-card">
+                <div class="circle-chart-wrapper">
+                  <svg class="circle-chart-svg" viewBox="0 0 100 100">
+                    <circle class="circle-chart-bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="circle-chart-fill" cx="50" cy="50" r="45" data-percent="95"></circle>
+                  </svg>
+                  <div class="circle-chart-text">95%</div>
+                </div>
+                <h5 class="circle-skill-title">Responsive Design</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cyber Security Skills -->
+        <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h4 class="skill-category-title"><i class="fas fa-shield-halved"></i> Security Specialties</h4>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Penetration Testing</span>
+                  <span class="skill-bar-percent">88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Network Security auditing</span>
+                  <span class="skill-bar-percent">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Ethical Hacking</span>
+                  <span class="skill-bar-percent">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <h4 class="skill-category-title"><i class="fas fa-bug"></i> Environment & Forensics</h4>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Linux Administration</span>
+                  <span class="skill-bar-percent">92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 92%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Kali Linux Suite</span>
+                  <span class="skill-bar-percent">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Digital Forensics</span>
+                  <span class="skill-bar-percent">74%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 74%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Marketing Skills -->
+        <div class="tab-pane fade" id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h4 class="skill-category-title"><i class="fas fa-bullhorn"></i> Marketing &amp; Promoting</h4>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Social Media Promoting</span>
+                  <span class="skill-bar-percent">92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 92%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Exhaustive Client Calls</span>
+                  <span class="skill-bar-percent">88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Event Organizing</span>
+                  <span class="skill-bar-percent">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <h4 class="skill-category-title"><i class="fas fa-tasks"></i> Administration &amp; Handling</h4>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Documentation Handling</span>
+                  <span class="skill-bar-percent">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Customer Relations &amp; Handling</span>
+                  <span class="skill-bar-percent">87%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 87%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-title">Administrative Operations</span>
+                  <span class="skill-bar-percent">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE SECTION -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-title-wrapper" data-aos="fade-up">
+        <span class="section-tag">Milestones</span>
+        <h2 class="section-title">Work <span>Journey</span></h2>
+      </div>
+      <div class="timeline-vertical">
+        
+        <!-- Experience 1 -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="glass-panel timeline-card">
+            <span class="timeline-date">September 2023 - December 2024</span>
+            <h4 class="timeline-role">Assistant Marketing Manager</h4>
+            <div class="timeline-company">
+              <i class="fas fa-building"></i> Science Medicine Campus
+            </div>
+            <p class="timeline-desc">
+              Assisted in planning and executing marketing campaigns, managed social media channels, coordinated promotional events, and contributed to brand strategy and digital outreach initiatives.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-title-wrapper" data-aos="fade-up">
+        <span class="section-tag">Showcase</span>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+      </div>
+
+      <!-- Project cards will be added here -->
+      <div class="row g-4">
+        <!-- Projects will be added here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-title-wrapper" data-aos="fade-up">
+        <span class="section-tag">Validation</span>
+        <h2 class="section-title">Licenses & <span>Certs</span></h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Certificates will be added here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <div class="container">
+      <div class="section-title-wrapper" data-aos="fade-up">
+        <span class="section-tag">Value Proposition</span>
+        <h2 class="section-title">Offered <span>Services</span></h2>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="glass-panel service-card">
+            <div class="service-icon-box">
+              <i class="fas fa-code"></i>
+            </div>
+            <h4 class="service-title">Website Development</h4>
+            <p class="service-desc">
+              Custom static & dynamic web platforms built with HTML5, CSS3, modern JS Frameworks, and solid performance pipelines. Scaled for responsive devices and fast indexing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="glass-panel service-card">
+            <div class="service-icon-box">
+              <i class="fab fa-wordpress"></i>
+            </div>
+            <h4 class="service-title">WordPress Architecture</h4>
+            <p class="service-desc">
+              Custom theme crafting, plugin coding, database query optimizations, page builds, and complete CMS security hardening designed for corporate business projects.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="glass-panel service-card">
+            <div class="service-icon-box">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <h4 class="service-title">Cyber Security Consulting</h4>
+            <p class="service-desc">
+              Offensive penetration testing audits, vulnerability reports, server hardening (Apache/Nginx), firewall configurations, and compliance checks (OWASP).
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="glass-panel service-card">
+            <div class="service-icon-box">
+              <i class="fas fa-pen-nib"></i>
+            </div>
+            <h4 class="service-title">Graphic & UI/UX Design</h4>
+            <p class="service-desc">
+              Wireframing layouts in Figma, designing vector elements in Illustrator, and creating brand styles and custom composite assets inside Photoshop.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+          <div class="glass-panel service-card">
+            <div class="service-icon-box">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h4 class="service-title">Digital Marketing</h4>
+            <p class="service-desc">
+              On-page/Off-page SEO optimization campaigns, target growth pipelines, Google Ads management, social media funnels, and marketing analytics index reporting.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+          <div class="glass-panel service-card">
+            <div class="service-icon-box">
+              <i class="fas fa-bug-slash"></i>
+            </div>
+            <h4 class="service-title">Technical Support</h4>
+            <p class="service-desc">
+              Server log parsing, server migration assistance, website backup deployments, security recovery after compromise, and software environment diagnostic solutions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title-wrapper" data-aos="fade-up">
+        <span class="section-tag">Transmission</span>
+        <h2 class="section-title">Secure <span>Contact</span></h2>
+      </div>
+
+      <div class="row g-5">
+        <!-- Contact Details Left -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <h3 class="mb-4">Get in Touch</h3>
+          <p class="text-secondary mb-5">
+            Have a project in mind, need a system security audit, or just want to chat about AI? Send a message through the encrypted form, or reach out through my direct vectors.
+          </p>
+
+          <div class="contact-info-list">
+            <!-- Address -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-location-dot"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Address</h5>
+                <p>203 Rathna Mawatha Piliyandhala, Sri Lanka</p>
+              </div>
+            </div>
+            <!-- Phone -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-phone-volume"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Phone</h5>
+                <a href="tel:+94760070032">+94 76 007 0032</a></p>
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope-open-text"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Email</h5>
+                <a href="mailto:suwedha.it@gmail.com">suwedha.it@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Styled map background -->
+          <div class="contact-map-wrapper">
+            <iframe class="contact-map-iframe" src="https://maps.google.com/maps?q=203%20Rathna%20Mawatha%20Piliyandala,%20Sri%20Lanka&t=&z=14&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form Right -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="glass-panel contact-form-card">
+            <form id="contact-form" novalidate>
+              
+              <!-- Name input -->
+              <div class="form-group-custom">
+                <input type="text" id="form-name" class="form-input-custom" placeholder=" " required minlength="2">
+                <label for="form-name" class="form-label-custom">Full Name</label>
+                <div class="invalid-feedback-custom">Name is too short.</div>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-group-custom">
+                <input type="email" id="form-email" class="form-input-custom" placeholder=" " required>
+                <label for="form-email" class="form-label-custom">Email Address</label>
+                <div class="invalid-feedback-custom">Invalid email address.</div>
+              </div>
+
+              <!-- Phone input -->
+              <div class="form-group-custom">
+                <input type="tel" id="form-phone" class="form-input-custom" placeholder=" ">
+                <label for="form-phone" class="form-label-custom">Phone Number (Optional)</label>
+                <div class="invalid-feedback-custom"></div>
+              </div>
+
+              <!-- Subject input -->
+              <div class="form-group-custom">
+                <input type="text" id="form-subject" class="form-input-custom" placeholder=" " required>
+                <label for="form-subject" class="form-label-custom">Subject</label>
+                <div class="invalid-feedback-custom">Subject cannot be empty.</div>
+              </div>
+
+              <!-- Message input -->
+              <div class="form-group-custom">
+                <textarea id="form-message" class="form-input-custom" rows="5" placeholder=" " required></textarea>
+                <label for="form-message" class="form-label-custom">Your Message</label>
+                <div class="invalid-feedback-custom">Message cannot be empty.</div>
+              </div>
+
+              <div class="text-end">
+                <button type="submit" class="btn-primary-custom w-100 py-3">
+                  <i class="fas fa-lock"></i> Encrypt & Send Message
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row g-4">
+          
+          <!-- About Column -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="footer-about-logo">SUWEDHA<span>.SIVAKUMAR</span></div>
+            <p class="footer-about-desc">
+              Bridging the gap between full-stack web development, cybersecurity, and strategic digital marketing. Creating modern, elegant, and secure digital platforms.
+            </p>
+            <div class="hero-socials">
+                <a href="https://github.com/Suwedha-Sivakumar" target="_blank" class="social-icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/suwedha-sivakumar" target="_blank" class="social-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links Column -->
+          <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-links">
+              <li class="footer-link-item"><a href="#home"><i class="fas fa-chevron-right text-muted" style="font-size: 0.75rem;"></i> Home</a></li>
+              <li class="footer-link-item"><a href="#about"><i class="fas fa-chevron-right text-muted" style="font-size: 0.75rem;"></i> About</a></li>
+              <li class="footer-link-item"><a href="#skills"><i class="fas fa-chevron-right text-muted" style="font-size: 0.75rem;"></i> Skills</a></li>
+              <li class="footer-link-item"><a href="#projects"><i class="fas fa-chevron-right text-muted" style="font-size: 0.75rem;"></i> Projects</a></li>
+              <li class="footer-link-item"><a href="#contact"><i class="fas fa-chevron-right text-muted" style="font-size: 0.75rem;"></i> Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services Column -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <h5 class="footer-title">Services</h5>
+            <ul class="footer-links">
+              <li class="footer-link-item"><a href="#services"><i class="fas fa-circle-check text-muted" style="font-size: 0.75rem;"></i> Web Development</a></li>
+              <li class="footer-link-item"><a href="#services"><i class="fas fa-circle-check text-muted" style="font-size: 0.75rem;"></i> WordPress CMS</a></li>
+              <li class="footer-link-item"><a href="#services"><i class="fas fa-circle-check text-muted" style="font-size: 0.75rem;"></i> Security Consulting</a></li>
+              <li class="footer-link-item"><a href="#services"><i class="fas fa-circle-check text-muted" style="font-size: 0.75rem;"></i> Graphic Design</a></li>
+              <li class="footer-link-item"><a href="#services"><i class="fas fa-circle-check text-muted" style="font-size: 0.75rem;"></i> Digital Marketing</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <h5 class="footer-title">Newsletter</h5>
+            <div class="footer-newsletter">
+              <p>Subscribe to receive system security feeds and web technology insights.</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your Email Address" class="newsletter-input" required>
+                <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <p class="m-0">© Suwedha Sivakumar. All Rights Reserved. | Secured with SSL Encryption.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP FLOATING BUTTON -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top">
+    <i class="fas fa-angle-up"></i>
+  </button>
+
+  <!-- CDN CORE SCRIPTS -->
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GSAP Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- GSAP ScrollTrigger plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- AOS Scroll Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Typed.js for dynamic typing effect -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Particles.js for hero network backgrounds -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  
+  <!-- CUSTOM SCRIPT -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
