@@ -1109,6 +1109,29 @@ section {
   to { transform: rotate(360deg); }
 }
 
+/* About Section — forced Light/Dark text theme for strong contrast.
+   Scoped to #about only so other sections are unaffected.
+   Pure white in dark mode, pure black in light mode, on all core
+   heading/subheading/paragraph/label text. The gradient highlight on
+   "Me" (h2 span) and the .stat-number figures are intentionally left
+   alone since they already swap accent colors per theme and are a
+   signature glow effect, not a flat low-contrast gray. */
+#about .section-title,
+#about h3,
+#about .about-description,
+#about .about-label,
+#about .stat-label {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] #about .section-title,
+[data-theme="light"] #about h3,
+[data-theme="light"] #about .about-description,
+[data-theme="light"] #about .about-label,
+[data-theme="light"] #about .stat-label {
+  color: #000000 !important;
+}
+
 /* 8. SKILLS SECTION */
 .skills-tab-content {
   margin-top: 40px;
@@ -2248,7 +2271,7 @@ section {
 }
 
 [data-theme="light"] .about-detail-value {
-  color: var(--text-primary) !important;
+  color: #000000 !important;
 }
 
 [data-theme="light"] .about-detail-value:hover {
